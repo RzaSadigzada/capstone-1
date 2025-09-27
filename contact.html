@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact form page">
+  <meta name="author" content="Rza Sadigzada">
+  <title>Contact Me - Portfolio</title>
+<link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+  <header>
+    <h1>📬 Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="education.html">Education</a> |
+      <a href="schedule.html">Weekly Schedule</a> |
+      <a href="contact.html">Contact Me</a> |
+    </nav>
+  </header>
+
+  <section>
+    <form action="mailto:rsadigzada15200@ada.edu.az" method="post" enctype="text/plain">
+      <label for="fullname">Full Name:</label><br>
+      <input type="text" id="fullname" name="fullname"><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email"><br><br>
+
+      <label>Preferred Contact:</label><br>
+      <input type="radio" name="contact" value="Email"> Email
+      <input type="radio" name="contact" value="Phone"> Phone<br><br>
+
+      <label>Topics You’re Interested In:</label><br>
+      <input type="checkbox" name="topics" value="Coding"> Coding
+      <input type="checkbox" name="topics" value="Design"> Design
+      <input type="checkbox" name="topics" value="Science"> Science<br><br>
+
+      <label for="country">Select Country:</label><br>
+      <select id="country" name="country">
+        <option value="Azerbaijan">Azerbaijan</option>
+        <option value="Canada">Canada</option>
+        <option value="United Kingdom">United Kingdom</option>
+      </select><br><br>
+
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+      <input type="submit" value="Send Message">
+    </form>
+  </section>
+</body>
+</html>
